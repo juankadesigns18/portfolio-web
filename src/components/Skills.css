@@ -1,0 +1,40 @@
+.container-container {
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  padding: 1rem;
+  padding-bottom: 200px;
+  
+}
+
+.skills h2 {
+  color: rgb(228, 225, 67);
+  font-size: 30px;
+  text-align: left;
+  margin-top: 200px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.icon-skill {
+  max-width: 70px;
+  height: auto;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+.icon-skill:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 10px rgba(70, 209, 255, 0.678)) drop-shadow(0 0 15px rgba(56, 184, 226, 0.589)) drop-shadow(0 0 10px rgba(70, 191, 231, 0.452));
+}
+
+p {
+  font-size: 18px;
+  color: #ffffff;
+}

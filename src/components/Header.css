@@ -1,0 +1,73 @@
+/* Eliminar márgenes y padding globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* Header sin espacios alrededor */
+.header {
+  background: linear-gradient(to right, rgb(2, 9, 24), rgb(25, 33, 56), rgb(2, 9, 24));
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  height: 60px; 
+  box-sizing: border-box;
+}
+
+.header::before {
+  content: ""; /* Necesario para mostrar el pseudo-elemento */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit; /* Hereda el fondo del elemento principal */
+  filter: blur(10px); /* Ajusta el nivel de desenfoque según sea necesario */
+  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+
+
+/* Estilo para la lista del nav */
+ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end; 
+  width: 100%;
+}
+
+/* Enlaces de navegación */
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #63d3ec;
+  text-shadow: 0 0 5px #00cfff;
+}

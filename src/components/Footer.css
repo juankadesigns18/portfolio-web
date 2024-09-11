@@ -1,0 +1,31 @@
+/* Estilos para asegurar que el footer ocupe todo el ancho de la pantalla */
+footer {
+    width: 100vw; 
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%); 
+    background: linear-gradient(to right, rgb(2, 9, 24), rgb(25, 33, 56), rgb(2, 9, 24));
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: -70px;
+}
+
+/* Estilo de los íconos de redes sociales */
+.footer-section .social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-section .social-icons a {
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.footer-section .social-icons a:hover {
+    transform: scale(1.2);
+}
