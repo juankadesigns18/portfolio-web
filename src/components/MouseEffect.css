@@ -1,0 +1,15 @@
+.mouse-effect {
+    position: fixed;  /* Cambia a fixed para que esté en relación con la ventana del navegador */
+    width: 100px;
+    height: 100px;
+    background: rgba(129, 212, 240, 0.253); /* Celeste */
+    border-radius: 50%; /* Para que sea un círculo */
+    pointer-events: none; /* Evita que interfiera con otros elementos */
+    box-shadow: 
+      0 0 10px rgba(139, 204, 226, 0.5), /* Sombra más pequeña y menos difusa */
+      0 0 20px rgba(94, 164, 187, 0.3), /* Sombra intermedia */
+      0 0 40px rgba(53, 115, 136, 0.2); /* Sombra más difusa y extendida */
+    transition: transform 0.1s ease; /* Suaviza el movimiento */
+    z-index: 1000;
+  }
+  

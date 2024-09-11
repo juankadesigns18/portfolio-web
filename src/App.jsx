@@ -6,11 +6,14 @@ import Skills from './components/Skills';
 import Footer from './components/Footer';
 import './App.css';
 import Education from './components/Education';
+import MouseEffect from './components/MouseEffect';
+
 
 
 const App = () => {
   return (
     <div>
+      <MouseEffect />
       <Header />
       <About />
       <Projects />

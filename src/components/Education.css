@@ -37,8 +37,8 @@
     width: 25px;
     height: 25px;
     right: -17px;
-    background-color: rgb(245, 230, 95);
-    border: 4px solid #704a02;
+    background-color: #b3e0f2;
+    border: 4px solid #05445E;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -90,12 +90,11 @@
   /* The actual content */
   .content {
     padding: 20px 30px;
-    background-color: rgb(228, 225, 67);
+    background-color: #1a374d;
     position: relative;
     border-radius: 6px;
     border: 3px solid #ffffff;
     transition: transform 0.3s ease-in-out;
-    
   }
 
   .content:hover{
@@ -104,11 +103,11 @@
   }
 
   .content h2{
-    color: black;
+    color: rgb(255, 255, 255);
   }
 
   .content p{
-    color: black;
+    color: rgb(255, 255, 255);
   }
   
   /* Media queries - Responsive timeline on screens less than 600px wide */

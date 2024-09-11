@@ -1,6 +1,8 @@
 import './Contact.css';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { Slide } from 'react-awesome-reveal';
+
 
 const Contact = () => {
   const form = useRef();
@@ -23,6 +25,7 @@ const Contact = () => {
       );
   };
   return (
+    <Slide direction="right" triggerOnce>
     <section id="contacto" className="contact">
       <h2>Contáctame</h2>
       <form ref={form} onSubmit={sendEmail}>
@@ -38,6 +41,8 @@ const Contact = () => {
         <button type="submit">Enviar</button>
       </form>
     </section>
+    </Slide>
+
   );
 };
 

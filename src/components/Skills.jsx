@@ -1,4 +1,5 @@
 import './Skills.css';
+import { Slide } from 'react-awesome-reveal';
 import html5Logo from '../assets/html-5.png';
 import cssLogo from '../assets/css.png';
 import reactLogo from '../assets/react.png';
@@ -13,11 +14,14 @@ const Skills = () => {
   return (
     <section id="habilidades" className="skills">
         <h2>Mis habilidades</h2>
+        <Slide direction="up" triggerOnce>
+
         <div className='container-container'>
             <div className='skills'>
                  <img src={html5Logo} alt="HTML5 Logo" className='icon-skill'/>
                 <p>HTML</p>
             </div>
+
             <div className='skills'>
                  <img src={cssLogo} alt="CSS Logo" className='icon-skill'/>
                 <p>CSS</p>
@@ -51,6 +55,8 @@ const Skills = () => {
                 <p>Linux</p>
             </div>
         </div>
+        </Slide>
+
     </section>
   );
 };
