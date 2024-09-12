@@ -2,18 +2,23 @@
   padding: 40px;
   padding-top: 150px;
   padding-bottom: 240px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .about-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .text-section {
   flex: 1;
   text-align: left;
   padding-right: 20px;
+  min-width: 300px;
 }
 
 h1 {
@@ -47,22 +52,25 @@ p {
   filter: drop-shadow(0 0 10px rgba(70, 209, 255, 0.678)) drop-shadow(0 0 15px rgba(56, 184, 226, 0.589)) drop-shadow(0 0 10px rgba(70, 191, 231, 0.452));
 }
 
-button {
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
+/* Clase específica para el botón de descarga de CV */
+.download-cv-button {
+  width: 150px;
+  padding: 15px;
+  background-color: #297679f1; 
+  color: #d4d4f9; 
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 10px;
+  font-family: 'Arial', sans-serif;
   font-size: 1rem;
-  transition: background-color 0.3s ease, box-shadow 0.5s ease;
-  box-shadow: 0 0 5px var(--main-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #555;
+.download-cv-button:hover {
+  background-color: #7de7ebf1;
   box-shadow: 0 0 25px #00cfff, 0 0 20px #00cfff, 0 0 10px #00cfff;
 }
+
 
 
 .photo-section {
@@ -82,5 +90,93 @@ button:hover {
   box-shadow: 0 0 25px #00cfff, 0 0 50px #00cfff, 0 0 100px #00cfff;
 }
 
+@media (max-width: 768px) {
+  .about-container {
+    margin-bottom: -120px;
+    flex-direction: column;
+    text-align: center;
+  }
 
+  .text-section {
+    padding-right: 0;
 
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    padding-left: 20px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 1px;
+  }
+
+  .photo-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .photo-section img {
+    width: 300px;
+  }
+
+  .download-cv-button {
+    width: 90px;
+    font-size: 0.9rem;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-container {
+    margin-bottom: -120px;
+
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-section {
+    padding-right: 0;
+
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    padding-left: 20px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 1px;
+  }
+
+  .photo-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .photo-section img {
+    width: 300px;
+  }
+
+  .download-cv-button {
+    width: 90px;
+    font-size: 0.9rem;
+    padding: 4px 8px;
+  }
+}

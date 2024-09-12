@@ -112,6 +112,10 @@
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
   @media screen and (max-width: 600px) {
+    .edu-title{
+      text-align: center;
+    }
+
   /* Place the timelime to the left */
     .timeline::after {
       left: 31px;
@@ -141,4 +145,11 @@
     .right {
       left: 0%;
     }
+  }
+
+  @media (max-width: 1200px) {
+    .edu-title{
+      margin-left: 20px;
+    }
+
   }

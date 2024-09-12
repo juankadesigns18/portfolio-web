@@ -1,108 +1,125 @@
 .projects {
-    padding: 20px;
-  }
-  
-  .projects-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 200px;
-    gap: 70px;
-    
-  }
-  
-  .project-card {
-    position: relative; 
-    padding: 15px;
-    border-radius: 10px;
-    overflow: hidden; 
-    z-index: 1;
-    transition: transform 0.6s ease;
-  }
-
-  .text-overlay {
-    position: absolute;
-    right: 5px;
-    color: #fff; /* Color del texto */
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    z-index: 2; /* Asegúrate de que esté por encima del fondo difuso */
-  }
-
-  .project-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #0a2742; 
-    filter: blur(10px); 
-    z-index: -1; 
-    border-radius: 10px;
-    transition: box-shadow 0.5s ease;
-  }
-
-  .project-card:hover{
-    background-color: #3d90c0;
-    
-  }
-  
-  .project-card:hover{
-    box-shadow: 0 0 25px #00cfff, 0 0 20px #00cfff, 0 0 10px #00cfff;
-
-  }
-  
-  .project-card img,
-  .project-card h3,
-  .project-card p,
-  .project-card a {
-    position: relative; 
-    z-index: 1; 
-  }
-
-.project-card:hover{
-  transform: scale(1.1);
-
+  padding: 20px;
 }
 
-  .project-card img {
-    max-width: 500px;
-    border-radius: 10px;
-  }
-  
-  .project-card h3 {
-    margin-top: 10px;
-    color: #86c1ff;
-    text-align: left;
-    padding-left: 15px;
-    font-size: 22px;
-  }
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 200px;
+  gap: 70px;
+}
 
-  .project-card h3:hover {
-    color: #00e5ff; /* O el color que elijas */
-    transition: color 0.3s ease;
-  }
-  
-  .project-card p {
-    color: #ffffff;
-    text-align: center;
-  }
+/* Estilo para cada tarjeta de proyecto */
+.project-card {
+  position: relative;
+  padding: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.6s ease;
+}
 
-  .project-card a{
-    color: #87d1e2;
-  }
+.text-overlay {
+  position: absolute;
+  right: 5px;
+  color: #fff; /* Color del texto */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 2; /* Asegúrate de que esté por encima del fondo difuso */
+}
 
-  .project-card a:hover{
-    color: #00cfff;
-  }
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0a2742;
+  filter: blur(10px);
+  z-index: -1;
+  border-radius: 10px;
+  transition: box-shadow 0.5s ease;
+}
 
-.projects h2{
+.project-card:hover {
+  background-color: #3d90c0;
+  box-shadow: 0 0 25px #00cfff, 0 0 20px #00cfff, 0 0 10px #00cfff;
+  transform: scale(1.1);
+}
+
+.project-card img,
+.project-card h3,
+.project-card p,
+.project-card a {
+  position: relative;
+  z-index: 1;
+}
+
+.project-card img {
+  max-width: 100%; /* Cambiado a 100% para que se ajuste a su contenedor */
+  border-radius: 10px;
+}
+
+.project-card h3 {
+  margin-top: 10px;
+  color: #86c1ff;
+  text-align: left;
+  padding-left: 15px;
+  font-size: 22px;
+}
+
+.project-card h3:hover {
+  color: #00e5ff; /* O el color que elijas */
+  transition: color 0.3s ease;
+}
+
+.project-card p {
+  color: #ffffff;
+  text-align: center;
+}
+
+.project-card a {
+  color: #87d1e2;
+}
+
+.project-card a:hover {
+  color: #00cfff;
+}
+
+.projects h2 {
   color: rgb(228, 225, 67);
   text-align: left;
   font-size: 45px;
   margin-bottom: 25px;
-}  
+}
 
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr; /* Coloca las tarjetas en una sola columna en pantallas pequeñas */
+    gap: 50px; /* Reduce el espacio entre las tarjetas */
+  }
 
-  
+  .project-card {
+    padding: 10px; /* Reduce el padding en pantallas pequeñas */
+  }
+
+  .project-card h3 {
+    font-size: 18px; /* Reduce el tamaño de la fuente del título */
+  }
+
+  .project-card p {
+    font-size: 0.9rem; /* Ajusta el tamaño de la fuente del párrafo */
+  }
+
+  .text-overlay {
+    font-size: 12px; /* Ajusta el tamaño del texto de la superposición */
+  }
+
+  .projects h2 {
+    font-size: 30px; /* Reduce el tamaño de la fuente del título de proyectos */
+    text-align: center; /* Centra el título en pantallas pequeñas */
+  }
+}

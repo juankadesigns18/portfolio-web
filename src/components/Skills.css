@@ -3,7 +3,7 @@
   justify-content: space-around; 
   align-items: center; 
   padding: 1rem;
-  padding-bottom: 200px;
+  padding-bottom: 320px;
   
 }
 
@@ -37,4 +37,12 @@
 p {
   font-size: 18px;
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .container-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 150px;
+  }
 }

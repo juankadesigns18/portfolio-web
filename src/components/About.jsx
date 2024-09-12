@@ -5,7 +5,6 @@ import linkedinLogo from '../assets/linkedin.svg';
 import uruguayLogo from '../assets/uruguay.png';
 import { Slide } from 'react-awesome-reveal';
 
-
 const About = () => {
   return (
     <section id="sobre-mi" className="about">
@@ -27,7 +26,7 @@ const About = () => {
                 <img src={uruguayLogo} alt="Bandera de Uruguay" title="Bandera de Uruguay"/>
               </a>
               <a href="src\assets\C.V juan_sansberro.pdf" title="Descargar CV de Juan Sansberro" download>
-                <button>Descargar CV</button>
+                <button className="download-cv-button">Descargar CV</button> {/* Aplica la clase aquí */}
               </a>           
             </div>
           </div>

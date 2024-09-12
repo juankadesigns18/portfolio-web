@@ -13,7 +13,9 @@ import linuxLogo from '../assets/linux.png';
 const Skills = () => {
   return (
     <section id="habilidades" className="skills">
+        <Slide direction="up" triggerOnce> 
         <h2>Mis habilidades</h2>
+        </Slide>
         <Slide direction="up" triggerOnce>
 
         <div className='container-container'>

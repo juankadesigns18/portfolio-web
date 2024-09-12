@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Footer from './components/Footer';
 import './App.css';
 import Education from './components/Education';
+import Cards from './components/Cards';
 import MouseEffect from './components/MouseEffect';
 
 
@@ -19,6 +20,7 @@ const App = () => {
       <Projects />
       <Education />
       <Skills />
+      <Cards />
       <Contact />
       <Footer />
     </div>
