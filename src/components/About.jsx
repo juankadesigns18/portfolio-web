@@ -13,7 +13,7 @@ const About = () => {
           <div className="text-section">
             <h1>Juan Sansberro</h1>
             <p>
-              Buenas, mi nombre es Juan Sansberro, tengo 19 años y resido en Uruguay. Cuento con conocimientos en desarrollo web, en base de datos, metodologías ágiles, diferentes tecnologías y Cloud Computing. Soy una persona muy comprometido, comunicativo, proactivo y empático con ánimos de emprender nuevos desafíos. En constante capacitación sobre las nuevas herramientas y tecnológicas actuales.
+              Buenas, mi nombre es Juan Sansberro, tengo 19 años y resido en Uruguay. Cuento con conocimientos en desarrollo web, en base de datos, metodologías ágiles, diferentes tecnologías y Cloud Computing. Soy una persona muy comprometida, comunicativa, proactiva y empática con ánimos de emprender nuevos desafíos. En constante capacitación sobre las nuevas herramientas y tecnológicas actuales.
             </p>
             <div className="social-icons">
               <a href="https://www.linkedin.com/in/juan-manuel-sansberro-pereyra-a50a1329a/" target="_blank" rel="noopener noreferrer" title="Visita mi perfil de LinkedIn">
