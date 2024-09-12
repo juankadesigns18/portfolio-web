@@ -17,6 +17,7 @@ const Header = () => {
           <li><a href="#proyectos">Proyectos</a></li>
           <li><a href="#educacion">Educación</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#certificaciones">Certificaciones</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
         </Slide>
