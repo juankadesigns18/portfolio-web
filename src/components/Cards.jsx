@@ -55,7 +55,8 @@ const cards = [
 
 function Cards() {
   return (
-    <div>
+    <section id="certificaciones">
+     <div>
       {/* Título grande */}
       <Slide direction="right" triggerOnce>
         <h4 className="title">Licencias y Certificaciones</h4>
@@ -72,6 +73,8 @@ function Cards() {
         </Slide>
 
     </div>
+    </section>
+    
   );
 }
 
