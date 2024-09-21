@@ -25,9 +25,9 @@ const About = () => {
               <a>
                 <img src={uruguayLogo} alt="Bandera de Uruguay" title="Bandera de Uruguay"/>
               </a>
-              <a href="public\C.V juan_sansberro.pdf" title="Descargar CV de Juan Sansberro" download>
-                <button className="download-cv-button">Descargar CV</button> {/* Aplica la clase aquí */}
-              </a>           
+             <a href="https://drive.google.com/file/d/131tWYOd6_If_wFaqePPeGHe3UtZmjRx_/view?usp=sharing" target="_blank" title="Descargar CV de Juan Sansberro" download>
+                <button className="download-cv-button">Descargar CV</button> {}
+              </a>                 
             </div>
           </div>
         </Slide>
