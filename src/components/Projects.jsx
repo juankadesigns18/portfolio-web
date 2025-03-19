@@ -10,7 +10,7 @@ const projectsData = [
     description: 'Esta es una página web de documentación de Cita',
     link: 'https://soporte-cita.netlify.app/',
     image: projectImage3,
-    text: En progreso',
+    text: 'En progreso',
   },
   {
     title: 'Services Doc',
