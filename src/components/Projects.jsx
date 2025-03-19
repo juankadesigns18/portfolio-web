@@ -6,11 +6,11 @@ import { Slide } from 'react-awesome-reveal';
 
 const projectsData = [
   {
-    title: 'Cuidados Ambientales',
-    description: 'Esta es una página web sobre el cuidado del medio ambiente',
-    link: 'https://656751ecc900b32807b64115--spectacular-macaron-a46455.netlify.app/',
-    image: projectImage2,
-    text: '2023',
+    title: 'Soporte Cita',
+    description: 'Esta es una página web de documentación de Cita',
+    link: 'https://soporte-cita.netlify.app/',
+    image: projectImage3,
+    text: 'En progreso',
   },
   {
     title: 'Services Doc',
@@ -20,13 +20,12 @@ const projectsData = [
     text: '2024',
   },
   {
-    title: 'Soporte Cita',
-    description: 'Esta es una página web de documentación de Cita',
-    link: 'https://soporte-cita.netlify.app/',
-    image: projectImage3,
-    text: 'En progreso',
+    title: 'Cuidados Ambientales',
+    description: 'Esta es una página web sobre el cuidado del medio ambiente',
+    link: 'https://656751ecc900b32807b64115--spectacular-macaron-a46455.netlify.app/',
+    image: projectImage2,
+    text: '2023',
   },
-  
 ];
 
 const Projects = () => {
