@@ -7,7 +7,7 @@ import { Slide } from 'react-awesome-reveal';
 const projectsData = [
   {
     title: 'Soporte Cita',
-    description: 'Esta es una página web de documentación de la empresa de transporte Cita',
+    description: 'Esta es una página web de documentación de Cita',
     link: 'https://soporte-cita.netlify.app/',
     image: projectImage3,
     text: '2025',
