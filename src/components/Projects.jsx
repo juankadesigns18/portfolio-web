@@ -1,9 +1,17 @@
 import './Projects.css';
 import projectImage1 from '../assets/project-1-2.png';
 import projectImage2 from '../assets/project-2.png';
+import projectImage3 from '../assets/project-3.png';
 import { Slide } from 'react-awesome-reveal';
 
 const projectsData = [
+  {
+    title: 'Soporte Cita',
+    description: 'Esta es una página web de documentación de la empresa de transporte Cita',
+    link: 'https://soporte-cita.netlify.app/',
+    image: projectImage3,
+    text: '2025',
+  },
   {
     title: 'Services Doc',
     description: 'Esta es una página web sobre documentación de AWS.',
@@ -18,6 +26,7 @@ const projectsData = [
     image: projectImage2,
     text: '2023',
   },
+  
 ];
 
 const Projects = () => {
