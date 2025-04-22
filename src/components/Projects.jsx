@@ -2,9 +2,18 @@ import './Projects.css';
 import projectImage1 from '../assets/project-1-2.png';
 import projectImage2 from '../assets/project-2.png';
 import projectImage3 from '../assets/project-3.png';
+import projectImage4 from '../assets/project-4.png';
+
 import { Slide } from 'react-awesome-reveal';
 
 const projectsData = [
+  {
+    title: 'Administración de tareas',
+    description: 'Esta es una página web de gestión de tareas',
+    link: 'https://tareas-beta-five.vercel.app/',
+    image: projectImage4,
+    text: 'En progreso',
+  },
   {
     title: 'Soporte Cita',
     description: 'Esta es una página web de documentación de Cita',
